@@ -1,5 +1,5 @@
 /**
- * Modulo de registro de cambios
+ * Modulo de registro de cambios (INOTIFY)
  * cambios: borrado, modificacion y creacion de archivos
  * monitoreo de la raiz
  */
