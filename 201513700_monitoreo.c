@@ -22,7 +22,7 @@ void writeinFile(char* datetime, char* desc, char* infile){
 		printf("Error!");
 		exit(1);
 	}
-	fprintf(fptr,"time: %s <-> desc: %s <-> name: %s.\n", datetime, desc, infile);
+	fprintf(fptr,"time: %s <-> desc: %s \t\t\t<-> name: %s.\n", datetime, desc, infile);
 	fclose(fptr);
 }
 
@@ -97,7 +97,7 @@ int main(int argc, char **argv){
 						printf("%s | directorio %s eliminado.\n", s, event->name);
 						writeinFile(s, "directorio eliminado", event->name);
 					}else{
-						printf("%s El archivo %s fue eliminado.\n", s, event->name);
+						printf("%s | archivo %s eliminado.\n", s, event->name);
 						writeinFile(s, "archivo eliminado", event->name);
 					}
 
